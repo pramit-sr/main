@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Algorithms</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, rgb(9, 9, 27) 0%, rgb(39, 8, 39) 50%, rgb(92, 84, 84) 100%);
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5; /* Added line spacing */
+        }
+        h1 {
+            text-shadow: -1px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            margin: 10px;
+        }
+        .content {
+            color: rgb(9, 9, 27); /* Text color for better visibility */
+            margin: 100px auto; /* Center the content */
+            max-width: 800px;
+            background: white; /* Changed text background to white */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left; /* Align text to the left */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for separation */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="text-3xl font-bold mb-8">Search Algorithms</h1>
+
+    <div class="flex justify-center">
+        <button id="linearSearchButton" class="button bg-blue-500 text-white py-2 px-4 rounded">Linear Search</button>
+        <button id="binarySearchButton" class="button bg-green-500 text-white py-2 px-4 rounded">Binary Search</button>
+        <button id="ternarySearchButton" class="button bg-purple-500 text-white py-2 px-4 rounded">Ternary Search</button>
+    </div>
+
+    <div class="content" id="explanation">
+        <h2 class="text-xl font-bold">Search Algorithms Overview</h2>
+        <p><strong>Linear Search:</strong> A simple search algorithm that checks each element in the list until the desired element is found or the list ends.</p>
+        
+        <p><strong>When to use:</strong> When the list is unsorted or small, as it does not require additional memory and is straightforward to implement.</p>
+        
+        <p><strong>Binary Search:</strong> A more efficient algorithm that requires the list to be sorted. It repeatedly divides the search interval in half.</p>
+        
+        <p><strong>When to use:</strong> When the list is sorted, as it significantly reduces the number of comparisons needed.</p>
+
+        <p><strong>Ternary Search:</strong> Similar to binary search but divides the array into three parts instead of two, which can be more efficient in some scenarios.</p>
+        
+        <p><strong>When to use:</strong> When the list is sorted and you can afford the extra comparisons. It can outperform binary search in specific cases.</p>
+    </div>
+
+    <script>
+        document.getElementById('linearSearchButton').addEventListener('click', function() {
+            alert('Linear Search Algorithm: Check each element one by one.');
+        });
+
+        document.getElementById('binarySearchButton').addEventListener('click', function() {
+            alert('Binary Search Algorithm: Divide and conquer approach on sorted lists.');
+        });
+
+        document.getElementById('ternarySearchButton').addEventListener('click', function() {
+            alert('Ternary Search Algorithm: Similar to binary search, but divides into three parts.');
+        });
+    </script>
+
+</body>
+</html>
