@@ -30,7 +30,7 @@
             text-align: left; /* Align text to the left */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for separation */
         }
-        #head{
+        #head {
             margin-top: 50px;
         }
     </style>
@@ -39,15 +39,14 @@
 
     <h1 id="head" class="text-3xl font-bold mb-8 text-center">Search Algorithms</h1>
 
-
     <div class="flex justify-center">
-        <a href="https://pramit-sr.github.io/LS/" target="_blank" class="button">
+        <a href="https://pramit-sr.github.io/LS/" class="button">
             <button class="bg-blue-500 text-white py-2 px-4 rounded">Linear Search</button>
         </a>
-        <a href="https://pramit-sr.github.io/BS/" target="_blank" class="button">
+        <a href="https://pramit-sr.github.io/BS/" class="button">
             <button class="bg-green-500 text-white py-2 px-4 rounded">Binary Search</button>
         </a>
-        <a href="https://pramit-sr.github.io/TS/" target="_blank" class="button">
+        <a href="https://pramit-sr.github.io/TS/" class="button">
             <button class="bg-purple-500 text-white py-2 px-4 rounded">Ternary Search</button>
         </a>
     </div>
@@ -66,20 +65,6 @@
         
         <p><strong>When to use:</strong> When the list is sorted and you can afford the extra comparisons. It can outperform binary search in specific cases.</p>
     </div>
-
-    <script>
-        document.getElementById('linearSearchButton').addEventListener('click', function() {
-            alert('Linear Search Algorithm: Check each element one by one.');
-        });
-
-        document.getElementById('binarySearchButton').addEventListener('click', function() {
-            alert('Binary Search Algorithm: Divide and conquer approach on sorted lists.');
-        });
-
-        document.getElementById('ternarySearchButton').addEventListener('click', function() {
-            alert('Ternary Search Algorithm: Similar to binary search, but divides into three parts.');
-        });
-    </script>
 
 </body>
 </html>
